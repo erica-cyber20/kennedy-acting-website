@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A joyful, parent-managed acting portfolio for Kennedy, a young performer with a love for acting, storytelling, music, and dance."
+    >
+    <title>Kennedy | Young Actress & Performer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Kennedy home">
+          <span class="brand-mark" aria-hidden="true">K</span>
+          <span>Kennedy</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#resume">Resume</a>
+          <a href="#reel">Reel</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-band" id="home">
+        <div class="hero-art" aria-hidden="true">
+          <span class="spark spark-one"></span>
+          <span class="spark spark-two"></span>
+          <span class="spark spark-three"></span>
+        </div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Parent-managed young performer portfolio</p>
+          <h1>Meet Kennedy — Actress, Performer, and Future Star</h1>
+          <p class="hero-intro">
+            Kennedy lights up when she gets to act, tell stories, learn scripts, sing, dance,
+            and bring characters to life. Her portfolio celebrates a joyful creative spirit with
+            a professional space for auditions, reels, photos, and bookings.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#reel">View Talent Reel</a>
+            <a class="button secondary" href="#contact">Contact for Bookings</a>
+          </div>
+        </div>
+        <div class="hero-media reveal">
+          <img src="assets/portfolio-headshot.png" alt="Approved smiling headshot for Kennedy's acting portfolio">
+        </div>
+      </section>
+
+      <section class="about section-wrap" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>A bright storyteller with big-stage dreams</h2>
+        </div>
+        <div class="about-grid">
+          <article class="about-card reveal">
+            <h3>Biography</h3>
+            <p>
+              Kennedy is a young actress and performer who loves stepping into new characters
+              and sharing stories with heart. In a parent-approved voice, this space can introduce
+              her personality, training, favorite kinds of roles, and the joy she brings to every
+              rehearsal, classroom, audition, and performance.
+            </p>
+            <p>
+              She enjoys acting, storytelling, performing, learning scripts, practicing scenes,
+              and discovering how a character thinks, feels, and moves.
+            </p>
+          </article>
+          <div class="trait-board reveal" aria-label="Performer details">
+            <div>
+              <span>Personality</span>
+              <strong>Confident, kind, curious, expressive</strong>
+            </div>
+            <div>
+              <span>Hobbies</span>
+              <strong>Dance, singing, reading, improv games</strong>
+            </div>
+            <div>
+              <span>Favorite Roles</span>
+              <strong>Funny friend, brave leader, imaginative dreamer</strong>
+            </div>
+            <div>
+              <span>Goals</span>
+              <strong>Book commercials, films, theater, and voiceover work</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section-band" id="portfolio">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Acting Portfolio</p>
+          <h2>Clips, scenes, and performance highlights</h2>
+        </div>
+        <div class="filter-row reveal" aria-label="Portfolio categories">
+          <button class="chip active" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="monologues">Monologues</button>
+          <button class="chip" type="button" data-filter="commercial">Commercial Reads</button>
+          <button class="chip" type="button" data-filter="theater">Theater</button>
+          <button class="chip" type="button" data-filter="camera">On-Camera Work</button>
+        </div>
+        <div class="clip-grid">
+          <article class="clip-card reveal" data-category="monologues">
+            <div class="video-placeholder" aria-label="Video placeholder for dramatic monologue">
+              <span class="play-icon" aria-hidden="true"></span>
+            </div>
+            <p class="clip-date">Spring 2026</p>
+            <h3>Imaginative Monologue</h3>
+            <p>A one-minute piece showing clear choices, emotion, and strong memorization.</p>
+          </article>
+          <article class="clip-card reveal" data-category="commercial">
+            <div class="video-placeholder" aria-label="Video placeholder for commercial read">
+              <span class="play-icon" aria-hidden="true"></span>
+            </div>
+            <p class="clip-date">Winter 2026</p>
+            <h3>Bright Commercial Read</h3>
+            <p>Friendly camera presence with warm smile, clean slate, and natural delivery.</p>
+          </article>
+          <article class="clip-card reveal" data-category="theater">
+            <video class="clip-video clip-video-landscape" controls preload="metadata" poster="assets/musical-bootcamp-thumbnail.png" aria-label="Musical BootCamp Performance video">
+              <source src="assets/musical-bootcamp-performance.mov">
+              Your browser does not support embedded video.
+            </video>
+            <p class="clip-date">Fall 2025</p>
+            <h3>Musical BootCamp Performance</h3>
+            <p>Stage confidence, projection, ensemble listening, and joyful performance energy.</p>
+          </article>
+          <article class="clip-card reveal" data-category="camera">
+            <video class="clip-video clip-video-landscape" controls preload="metadata" poster="assets/directors-cut-thumbnail.jpg" aria-label="Director's Cut: My Response video">
+              <source src="assets/kennedy-interview.mov">
+              Your browser does not support embedded video.
+            </video>
+            <p class="clip-date">Summer 2025</p>
+            <h3>Director's Cut: My Response</h3>
+            <p>A character-focused scene designed for quick review by casting professionals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery section-wrap" id="gallery">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Photo Gallery</p>
+          <h2>Headshots, performance moments, and creative portraits</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item feature reveal">
+            <img src="assets/gallery-school-headshot.png" alt="Approved school-style headshot for Kennedy">
+            <figcaption>Approved professional headshot</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="assets/bootcamp-performance.png" alt="Kennedy performing on stage during Boot Camp theatre Performance">
+            <figcaption>Boot Camp theatre Performance</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <div class="gallery-placeholder script"></div>
+            <figcaption>Script practice and character work</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <video class="gallery-video" controls preload="metadata" aria-label="Music, movement, and dance energy video">
+              <source src="assets/kennedy-dance.mp4" type="video/mp4">
+              Your browser does not support embedded video.
+            </video>
+            <figcaption>Music, movement, and dance energy</figcaption>
+          </figure>
+        </div>
+        <div class="headshot-showcase reveal" aria-label="Headshot gallery">
+          <h3>Headshot Collection</h3>
+          <div class="headshot-grid">
+            <figure class="headshot-card">
+              <img src="assets/headshot-collection-1.jpg" alt="Kennedy expressive headshot with glasses">
+              <figcaption>Expressive character headshot</figcaption>
+            </figure>
+            <figure class="headshot-card">
+              <img src="assets/headshot-collection-2.jpg" alt="Kennedy focused studio headshot">
+              <figcaption>Focused dramatic headshot</figcaption>
+            </figure>
+            <figure class="headshot-card">
+              <img src="assets/headshot-collection-3.jpg" alt="Kennedy smiling against a pink backdrop">
+              <figcaption>Bright commercial headshot</figcaption>
+            </figure>
+            <figure class="headshot-card">
+              <img src="assets/headshot-collection-4.jpg" alt="Kennedy smiling in a pink top headshot">
+              <figcaption>Warm natural headshot</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume section-band" id="resume">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Resume</p>
+          <h2>Quick review for agents, directors, and casting teams</h2>
+        </div>
+        <div class="resume-layout">
+          <div class="resume-panel reveal">
+            <h3>Kennedy Davis</h3>
+            <p>Young Actress | Performer | Storyteller</p>
+            <a class="button primary" href="assets/kennedy-resume-placeholder.pdf" aria-label="Download resume placeholder">
+              Download Resume
+            </a>
+            <p class="small-note">PDF placeholder for an approved child actor resume.</p>
+          </div>
+          <div class="resume-columns">
+            <article class="resume-list reveal">
+              <h3>Acting Experience</h3>
+              <ul>
+                <li>School play featured role</li>
+                <li>Community showcase scene</li>
+                <li>Practice commercial reads and monologues</li>
+              </ul>
+            </article>
+            <article class="resume-list reveal">
+              <h3>Training & Classes</h3>
+              <ul>
+                <li>Acting for kids workshop</li>
+                <li>On-camera audition basics</li>
+                <li>Storytelling and improv practice</li>
+              </ul>
+            </article>
+            <article class="resume-list reveal">
+              <h3>Special Skills</h3>
+              <ul>
+                <li>Script memorization</li>
+                <li>Improv games</li>
+                <li>Commercial smiles and expressive reactions</li>
+              </ul>
+            </article>
+            <article class="resume-list reveal">
+              <h3>Dance, Music & Recognition</h3>
+              <ul>
+                <li>Beginner dance and movement</li>
+                <li>Singing and rhythm practice</li>
+                <li>Classroom leadership and performance awards</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="reel section-wrap" id="reel">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Media / Talent Reel</p>
+          <h2>Reel-first layout for fast professional review</h2>
+        </div>
+        <div class="reel-layout">
+          <div class="main-reel reveal" aria-label="Main talent reel video placeholder">
+            <span class="play-icon large" aria-hidden="true"></span>
+            <p>Main Talent Reel Placeholder</p>
+          </div>
+          <div class="supporting-clips">
+            <article class="mini-clip reveal">
+              <span>01</span>
+              <div>
+                <h3>Slate & Intro</h3>
+                <p>Short, friendly introduction clip.</p>
+              </div>
+            </article>
+            <article class="mini-clip reveal">
+              <span>02</span>
+              <div>
+                <h3>Commercial Moment</h3>
+                <p>Bright, natural read for family brands.</p>
+              </div>
+            </article>
+            <article class="mini-clip reveal">
+              <span>03</span>
+              <div>
+                <h3>Scene Study</h3>
+                <p>Character work with emotional range.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section-band" id="testimonials">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Testimonials</p>
+          <h2>Encouraging words from trusted adults</h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote class="reveal">
+            <p>“Kennedy listens carefully, takes direction well, and brings a bright imagination to every scene.”</p>
+            <cite>Acting Coach</cite>
+          </blockquote>
+          <blockquote class="reveal">
+            <p>“She is confident, prepared, and always excited to support the other performers around her.”</p>
+            <cite>Theater Director</cite>
+          </blockquote>
+          <blockquote class="reveal">
+            <p>“Her joy for storytelling is easy to see, and she works hard while keeping the process fun.”</p>
+            <cite>Parent / Guardian</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="contact section-wrap" id="contact">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Parent-managed booking and audition inquiries</h2>
+        </div>
+        <div class="contact-layout">
+          <form class="contact-form reveal" action="mailto:kennedydavistalent@gmail.com" method="post" enctype="text/plain">
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>
+              Company / Organization
+              <input type="text" name="company" autocomplete="organization">
+            </label>
+            <label>
+              Reason for Contact
+              <select name="reason" required>
+                <option value="">Select a reason</option>
+                <option>Audition request</option>
+                <option>Representation</option>
+                <option>Community performance</option>
+                <option>Media or interview</option>
+                <option>Other parent-approved inquiry</option>
+              </select>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="button primary" type="submit">Send Inquiry</button>
+          </form>
+          <aside class="safety-card reveal" aria-label="Safety information">
+            <h3>Safety First</h3>
+            <p>All inquiries are reviewed by a parent/guardian.</p>
+            <p>
+              This site does not display Kennedy's personal phone number, school, home address,
+              or private information.
+            </p>
+            <div class="social-placeholders" aria-label="Social link placeholders">
+              <a href="https://www.instagram.com/kennedycdavis/" aria-label="Open Kennedy Davis on Instagram" target="_blank" rel="noopener">IG</a>
+              <a href="https://www.youtube.com/@kennedydavis-s3v" aria-label="Open Kennedy Davis on YouTube" target="_blank" rel="noopener">YT</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Kennedy. Parent/guardian-managed portfolio.</p>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
