@@ -468,6 +468,21 @@ blockquote {
   aspect-ratio: 16 / 9;
 }
 
+.coming-soon-label {
+  position: relative;
+  z-index: 1;
+  padding: 12px 18px;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 999px;
+  box-shadow: 0 12px 24px rgba(36, 48, 69, 0.18);
+}
+
 .play-icon {
   position: relative;
   z-index: 1;
@@ -576,6 +591,8 @@ blockquote {
 }
 
 .gallery-placeholder.script {
+  display: grid;
+  place-items: center;
   background:
     linear-gradient(90deg, transparent 48%, rgba(36, 48, 69, 0.1) 49% 51%, transparent 52%),
     repeating-linear-gradient(0deg, #fff 0 22px, #e8f5ff 22px 24px);
