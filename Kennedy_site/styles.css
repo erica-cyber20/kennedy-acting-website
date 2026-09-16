@@ -1156,3 +1156,9 @@ textarea:focus {
     align-items: flex-start;
   }
 }
+
+.directors-player { position: relative; }
+.directors-player video { display: block; }
+.directors-play { position: absolute; inset: 0; display: grid; place-items: center; width: 100%; border: 0; border-radius: 16px; background: transparent; cursor: pointer; }
+.directors-play[hidden], .directors-error[hidden] { display: none; }
+.directors-play:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }

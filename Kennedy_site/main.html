@@ -142,10 +142,14 @@
             <h3>Musical BootCamp Performance</h3>
           </article>
           <article class="clip-card reveal" data-category="camera">
-            <video class="clip-video clip-video-landscape" controls preload="metadata" poster="assets/directors-cut-thumbnail.jpg" aria-label="Director's Cut: My Response video">
+            <div class="directors-player">
+            <video id="directors-video" class="clip-video clip-video-landscape" controls playsinline preload="metadata" poster="assets/directors-cut-thumbnail.jpg" aria-label="Director's Cut: My Response video">
               <source src="assets/kennedy-interview.mov">
               Your browser does not support embedded video.
             </video>
+            <button class="directors-play" type="button" aria-label="Play Director's Cut: My Response" aria-controls="directors-video" hidden><span class="play-icon" aria-hidden="true"></span></button>
+            </div>
+            <p class="directors-error" role="alert" hidden>Sorry, this video could not play. Please try again or <a href="assets/kennedy-interview.mov">open the interview video directly</a>.</p>
             <p class="clip-date">Summer 2025</p>
             <h3>Director's Cut: My Response</h3>
           </article>

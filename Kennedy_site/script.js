@@ -4,7 +4,7 @@ const chips = document.querySelectorAll(".chip");
 const clips = document.querySelectorAll(".clip-card");
 const reveals = document.querySelectorAll(".reveal");
 const contactForm = document.querySelector(".contact-form");
-const playableVideos = document.querySelectorAll("video[poster]");
+const playableVideos = document.querySelectorAll("video[poster]:not(#directors-video)");
 
 menuButton.addEventListener("click", () => {
   const isOpen = navLinks.classList.toggle("open");
@@ -80,3 +80,29 @@ contactForm.addEventListener("submit", (event) => {
   window.location.href = `mailto:kennedydavistalent@gmail.com?subject=${subject}&body=${body}`;
   button.textContent = "Opening Email";
 });
+
+const directorsVideo = document.querySelector('#directors-video');
+const directorsPlay = document.querySelector('.directors-play');
+const directorsError = document.querySelector('.directors-error');
+if (directorsVideo && directorsPlay && directorsError) {
+  directorsPlay.hidden = false;
+  const showPlaybackError = () => {
+    directorsError.hidden = false;
+    directorsPlay.hidden = false;
+  };
+  directorsPlay.addEventListener('click', async () => {
+    directorsError.hidden = true;
+    directorsPlay.hidden = true;
+    try {
+      await directorsVideo.play();
+      directorsVideo.focus();
+    } catch {
+      showPlaybackError();
+    }
+  });
+  directorsVideo.addEventListener('playing', () => {
+    directorsPlay.hidden = true;
+    directorsError.hidden = true;
+  });
+  directorsVideo.addEventListener('error', showPlaybackError);
+}
